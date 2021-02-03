@@ -1,0 +1,41 @@
+<!--將參數給出的模板更名為父級-->
+{% extends "header.html" %}
+<!--將當前的模板插入到現有的模板當中-->
+<!-- {% include "header.html" %} -->
+{% block css %}
+<!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}"> -->
+{% endblock %}
+{% block body %}
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-md-4"></div>
+    <div class="col-6 col-md-4">
+        <form action = "#" method = "POST">
+        <body class="text-center">
+        <!-- <form class="form-signin"> -->
+        <img class="mb-4" src="static\whiteboard.jpg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Please register </h1>
+        <!-- label class = "sr-only"：瀏覽器中不會顯示出明顯的效果，此設計為方便殘障人士，當使用者無法讀取網站時，screen reader可以讀出來給用戶聽 -->
+        <label for="user_name" class="sr-only">user_name</label>
+        <!-- input type：表單的種類 -->
+        <!-- required：當使用者提交表單時，如果有任何需要填入資料的欄位是空白的話，瀏覽器會停止提交的動作，並顯示錯誤訊息 -->
+        <!-- autofocus：當頁面進入時，游標自動導入到此欄位上 -->
+        <input type="text" id="user_name" class="form-control" placeholder="Grace" name="user_name" required="" autofocus="">
+        <label for="user_city" class="sr-only">user_city</label>
+        <select id="user_city" name="city_select" class="form-select" aria-label="Default select example">
+            <option value="1">Taipei</option>
+            <option value="2">New Taipei</option>
+            <option value="3">Taoyuan</option>
+            <option value="4">Taichung</option>
+            <option value="5">Tainan</option>
+            <option value="6">Kaohsiung</option>
+        </select>           
+        <!-- <input type="text" id="user_city" class="form-control" placeholder="Taipei" name="user_city" required=""> -->
+        <button class="btn btn-lg btn-primary btn-block" type="submit">註冊</button>
+        <!-- <p class="mt-5 mb-3 text-muted">redd00r</p> -->
+        </form>
+        </body>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,62 @@
+{% extends "header.html" %}
+{% block title %}<title>Add Message</title>{% endblock %}
+{% block css %}
+<link rel="shortcut icon" href="https://www.flaticon.com/svg/vstatic/svg/2996/2996271.svg?token=exp=1611289169~hmac=31c026f0ddd864c4668616668b5311ff">
+{% endblock %}
+<head>
+</head>
+{% block body %}
+<div class="container">
+    <style>
+        body {
+            background-image: url("static/scene.jpg");
+            padding-bottom: 45%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    <div class="container-xl" style="margin-top: 15%;">
+        <form action="#" method="POST">
+            <div class="container">
+                <div class="col-md-6">
+                    <label for="exampleInputUser" class="form-label"><span style="color:orange;">User Name</span></label>
+                    <input type="text" class="form-control" id="exampleInputUser" placeholder="User Name *" name = "add_name">
+                </div>
+            </div>
+            <p>
+            </p>
+            <div class="container">
+                <div class="col-md-6">
+                    <label for="exampleInputTitle" class="form-label"><span style="color:orange;">Title</span></label>
+                    <!-- <p>
+                    </p> -->
+                    <input type="text" class="form-control" id="exampleInputTitle" placeholder="Title *" name = "title">
+                    <!-- <label for="exampleInputPassword1" class="form-label"><span style="color:orange;">City Name</span></label>
+                    <input type="text" class="form-control" id="exampleInputCitymane1" placeholder="City Name *"> -->
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-6">
+                    <label for="exampleInputContent" class="form-label"><span style="color:orange;">Content</span></label>
+                    <!-- <p>
+                    </p> -->
+                    <input type="text" class="form-control" id="exampleInputContent" placeholder="Content *" name = "content">
+                    <!-- <label for="exampleInputPassword1" class="form-label"><span style="color:orange;">City Name</span></label>
+                    <input type="text" class="form-control" id="exampleInputCitymane1" placeholder="City Name *"> -->
+                </div>
+            </div>
+            <div class="container">
+                <div class="mb-3 form-check">
+                    <!-- <input type="checkbox" class="form-check-input" id="exampleCheck1"> -->
+                    <!-- <label class="form-check-label" for="exampleCheck1">Check me out</label> -->
+                    <p></p>
+                </div>
+                <button type="submit" class="btn btn-primary">新增</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+</html>

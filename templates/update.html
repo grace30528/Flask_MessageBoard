@@ -1,0 +1,29 @@
+{% extends "header.html" %}
+{% block title %}<title>Update</title>{% endblock %}
+{% block css %}
+<!-- <link rel="shortcut icon" href="https://www.flaticon.com/svg/vstatic/svg/2996/2996271.svg?token=exp=1611289169~hmac=31c026f0ddd864c4668616668b5311ff"> -->
+{% endblock %}
+<head>
+</head>
+{% block body %}
+<div class="container">
+    <style>
+        body {
+            background-image: url("https://images.unsplash.com/photo-1568043210943-0e8aac4b9734?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8Y2F0c3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+            padding-bottom: 45%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    <form action="#" method="post">
+        <p>Title:</p>
+        <p><input type="text" name="title"></p>
+        <p>Content:</p>
+        <p><input type="text" name="content"></p>
+        <p><input type="submit" value="update"></p>
+    </form>
+    </body>
+</div>
+{% endblock %}
